@@ -1,4 +1,4 @@
-#!/home/josemachava/Documents/Jose Machava/Projects/photos/venv/bin/python
+#!/home/josemachva/Documents/Jose/JoseMachava/Open Souce/photos/venv/bin/python
 
 import sys
 import getopt
