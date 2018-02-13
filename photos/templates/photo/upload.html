@@ -1,11 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    {{ form }}
+{% extends "layout/base.html" %}
+{% comment %}
+    Author:Jose Machava <jose.s.machava@gmail.com>
+    Author URI: http://josemachava.com
+    Description:Photo
+    Copyrigth:2018 (c)
+{% endcomment %}
 
-</body>
-</html>
+
+
+{% load staticfiles %}
+{% block title %}
+    <title>Photo</title>
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static '' %}">
+
+
+
+{% endblock %}
+
+{% block scripts %}
+  <script src="{% static 'javascript/app.js' %}"></script>
+{% endblock %}
+
+
+{% block content %}
+     {{ form }}
+    {% include "layout/footer.html" %}
+{% endblock %}
+
